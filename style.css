@@ -1,0 +1,126 @@
+/* ---------- vars e estilos pro doc todo -------------- */
+
+:root {
+  --itau-orange: #ff6200;
+  --deep-black: #000000;
+}
+* {
+  font-family: "Inter", sans-serif !important;
+}
+
+body {
+  background-color: #000000;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+h1 {
+  color: #f8f9fa;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+/* ------------ estilos especificos ------------ */
+
+#map {
+  height: 500px;
+  width: 100%;
+  border-radius: 15px;
+  border: 1px solid var(--itau-orange);
+}
+
+.barra-de-pesquisa {
+  background-color: #000000 !important;
+  border: 1px solid var(--itau-orange) !important;
+  color: white !important;
+  border-radius: 9px;
+}
+.barra-de-pesquisa:focus {
+  box-shadow: none !important; /* Remove a sombra/brilho */
+  border-color: var(
+    --itau-orange
+  ) !important; /* Mantém a borda na cor do Itaú */
+  outline: 0;
+}
+.barra-de-pesquisa::placeholder {
+  color: white;
+  font-family: "Inter", sans-serif;
+}
+
+.barra-de-pesquisa::-webkit-search-cancel-button,
+.barra-de-pesquisa::-webkit-search-decoration,
+.barra-de-pesquisa::-webkit-search-results-button,
+.barra-de-pesquisa::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+  appearance: none;
+}
+.btn-itau {
+  background-color: var(--itau-orange) !important;
+  border-color: var(--itau-orange) !important;
+  border-radius: 0 9px 9px 0 !important;
+  font-weight: 700;
+  transition: 0.3s;
+  font-family: "Inter", sans-serif;
+}
+.btn-itau:hover {
+  background-color: #cc4e00 !important;
+}
+
+.btn-itau2 {
+  background-color: var(--itau-orange) !important;
+  border-color: var(--itau-orange) !important;
+  border-radius: 9px !important;
+  font-weight: 700;
+  transition: 0.3s;
+  font-family: "Inter", sans-serif;
+}
+
+.btn-itau2:hover {
+  background-color: #cc4e00 !important;
+}
+
+.drop-item {
+  color: var(--itau-orange) !important;
+  transition: 0.2s;
+}
+
+.km {
+  background-color: var(--itau-orange) !important;
+}
+.navbar {
+  background-color: #ff6200 !important;
+  border-bottom: 1px solid #1a1a1a;
+  padding: 1rem 0;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.navbar-brand span {
+  font-size: clamp(0.5rem, 1.5vw, 0.85rem) !important;
+}
+
+.opt {
+  color: var(--itau-orange) !important;
+}
+
+.seletor {
+  background-color: #000000 !important;
+  border: 1px solid var(--itau-orange) !important;
+  color: var(--itau-orange);
+  border-radius: 9px !important;
+  max-width: 90px !important;
+}
+.seletor:focus {
+  background-color: var(--itau-orange);
+  box-shadow: none !important;
+  color: var(--itau-orange);
+}
+.separator {
+  width: 2px;
+  height: 40px;
+  background-color: #ffffff;
+  margin: 0 15px 0 0;
+}
